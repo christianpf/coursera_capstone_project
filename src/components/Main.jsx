@@ -1,8 +1,13 @@
 import React from 'react'
+import Hero from './Hero';
+import Specials from './Specials';
 
 const Main = () => {
   return (
-    <main>Main</main>
+    <main>
+        <Hero/>
+        <Specials/>
+    </main>
   )
 }
 
