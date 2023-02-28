@@ -40,6 +40,11 @@ header {
   gap: 1rem;
 }
 
+.nav__links li:hover {
+  text-decoration: underline;
+  color: var(--clr-primary-400);
+}
+
 .full__bleed{
   box-shadow: 0 0 0 100vmax var(--clr-primary-400);
   clip-path: inset(0 -100vmax);
@@ -218,4 +223,56 @@ a.btn__primary {
   width: 200px;
   height: 300px;
   margin-bottom: 2rem;
+}
+
+.booking__confirmation {
+  text-align: center;
+  font-family: var(--ff-regular);
+  background-color: var(--clr-primary-400);
+  color: var(--clr-highlight-400);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+}
+
+.booking__confirmation h2 {
+  color: var(--clr-primary-700);
+}
+
+.booking__form {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--clr-primary-400);
+  font-family: var(--ff-regular);
+  font-weight: var(--fw-bold);
+}
+
+.booking__form label {
+  color: var(--clr-primary-700);
+}
+
+.booking__form button {
+  background-color: var(--clr-primary-700);
+  display: inline-block;
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  width: 150px;
+  margin: auto;
+}
+
+.booking__form button:hover {
+  background-color: var(--clr-highlight-400);
+  border: 2px solid var(--clr-highlight-700);
+}
+
+
+.form__field {
+  height: 50px;
+}
+
+.form__error {
+  color: var(--clr-secondary-400);
 }

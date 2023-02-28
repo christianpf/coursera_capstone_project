@@ -1,12 +1,16 @@
 import React from 'react'
-import Hero from './Hero';
-import Specials from './Specials';
+import HomePage from '../pages/HomePage'
+import BookingPage from '../pages/BookingPage'
+
+import {Routes, Route} from 'react-router-dom'
 
 const Main = () => {
   return (
     <main>
-        <Hero/>
-        <Specials/>
+        <Routes>
+          <Route path="/" element={<HomePage />}></Route>
+          <Route path="/booking" element={<BookingPage />}></Route>
+        </Routes>
     </main>
   )
 }
