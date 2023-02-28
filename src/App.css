@@ -137,6 +137,7 @@ a.btn__primary {
   .specials__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 1rem;
   }
 }
@@ -198,4 +199,23 @@ a.btn__primary {
   display: flex;
   align-items: flex-end;
   gap: 1rem;
+}
+
+.footer__container {
+  text-align: center;
+  position: relative;
+  margin-top: 5rem;
+
+  padding-top: 5rem;
+  border-top: 2px solid var(--clr-highlight-700);
+  background-color: var(--clr-highlight-400);
+  box-shadow: 0 0 0 100vmax var(--clr-highlight-400);
+  clip-path: inset(0 -100vmax);
+
+}
+
+.footer__container img {
+  width: 200px;
+  height: 300px;
+  margin-bottom: 2rem;
 }
